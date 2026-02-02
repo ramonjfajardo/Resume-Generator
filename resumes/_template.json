@@ -5,8 +5,8 @@
   "location": "City, State",
   "postalCode": "12345",
   "linkedin": "https://www.linkedin.com/in/yourprofile",
-  "website": "https://yourwebsite.com",
   "github": "https://github.com/yourusername",
+  "website": "https://yourwebsite.com",
   
   "experience": [
     {

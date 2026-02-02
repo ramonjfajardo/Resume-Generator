@@ -3,7 +3,7 @@
   "email": "lucasm6784@gmail.com",
   "phone": "",
   "location": "Greater Natal, Brazil",
-  "postalCode": "59090‑000",
+  "postalCode": "59090-000",
   "linkedin": "https://www.linkedin.com/in/lucas-moura-41455b245/",
   "github": "",
   "website": "",
@@ -34,11 +34,10 @@
   
   "education": [
     {
-      "degree": "Bachelor’s Degree in Computer Science",
+      "degree": "Bachelor's Degree in Computer Science",
       "school": "Universidade Federal do Rio Grande do Norte",
       "start_year": "2013",
       "end_year": "2017"
     }
   ]
-
 }
