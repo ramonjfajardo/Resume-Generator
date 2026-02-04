@@ -145,6 +145,11 @@ export default function ProfilePage() {
       return;
     }
 
+    if (!companyName.trim()) {
+      alert("Please enter a company name");
+      return;
+    }
+
     if (!selectedProfileData || !profileSlug) {
       alert("Profile data not loaded");
       return;
@@ -169,7 +174,7 @@ export default function ProfilePage() {
           profile: profileSlug,
           jd: jd,
           roleName: roleName.trim(),
-          companyName: companyName.trim() || null
+          companyName: companyName.trim()
         })
       });
 
@@ -605,20 +610,20 @@ export default function ProfilePage() {
             {/* Generate Button */}
             <button
               onClick={handleGenerate}
-              disabled={disable || !jd.trim() || !roleName.trim()}
+              disabled={disable || !jd.trim() || !roleName.trim() || !companyName.trim() }
               style={{
                 width: "100%",
                 padding: "clamp(8px, 2vw, 10px) clamp(12px, 3vw, 16px)",
                 fontSize: "clamp(12px, 3vw, 14px)",
                 fontWeight: "600",
                 color: colors.buttonText,
-                background: disable || !jd.trim() || !roleName.trim() ? colors.buttonDisabled : colors.buttonBg,
+                background: disable || !jd.trim() || !roleName.trim() || !companyName.trim() ? colors.buttonDisabled : colors.buttonBg,
                 border: "none",
                 borderRadius: "6px",
-                cursor: disable || !jd.trim() || !roleName.trim() ? "not-allowed" : "pointer",
+                cursor: disable || !jd.trim() || !roleName.trim() || !companyName.trim() ? "not-allowed" : "pointer",
                 transition: "all 0.2s ease",
                 marginBottom: "12px",
-                boxShadow: disable || !jd.trim() || !roleName.trim() ? "none" : theme === 'dark' ? "0 2px 8px rgba(59, 130, 246, 0.3)" : "0 1px 4px rgba(59, 130, 246, 0.2)"
+                boxShadow: disable || !jd.trim() || !roleName.trim() || !companyName.trim() ? "none" : theme === 'dark' ? "0 2px 8px rgba(59, 130, 246, 0.3)" : "0 1px 4px rgba(59, 130, 246, 0.2)"
               }}
               onMouseEnter={(e) => {
                 if (!disable && jd.trim() && roleName.trim()) {
