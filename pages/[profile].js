@@ -633,7 +633,7 @@ export default function ProfilePage() {
                 }
               }}
               onMouseLeave={(e) => {
-                if (!disable && jd.trim() && roleName.trim()) {
+                if (!disable && jd.trim() && roleName.trim() && companyName.trim()) {
                   e.currentTarget.style.background = colors.buttonBg;
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = theme === 'dark' ? "0 2px 8px rgba(59, 130, 246, 0.3)" : "0 1px 4px rgba(59, 130, 246, 0.2)";
