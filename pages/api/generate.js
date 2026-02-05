@@ -443,7 +443,7 @@ export default async function handler(req, res) {
       phone: profileData.phone || "",
       email: profileData.email || "",
       linkedin: profileData.linkedin || "",
-      github: profileData.github || "",
+      //github: profileData.github || "",
       //website: profileData.website || "",
       summary: resumeContent.summary || "",
       skills: resumeContent.skills || {},
